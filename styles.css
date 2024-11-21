@@ -1,0 +1,19 @@
+/*
+Namn: Daria
+Klass: TE23E
+*/
+
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Georgia', serif;
+    background-image: url(/img/background.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
