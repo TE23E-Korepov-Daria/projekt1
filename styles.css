@@ -72,6 +72,13 @@ header h2 {
 }
 
 /* Center Image */
+.center-image {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .center-image img {
     width: 100%;
     height: auto;
