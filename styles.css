@@ -20,7 +20,7 @@ body {
 
 .container {
     position: relative;
-    width: 1500px;
+    width: 1700px;
     height: 100%;
 }
 
@@ -42,21 +42,21 @@ header {
     display: flex;
     flex-direction: row;
     justify-content:space-between;
-    text-align: center;
     margin-top: 70px;
     /* margin-bottom: 20px; */
 }
 header h1 {
-    margin-top: 90px;
+    margin-top: 50px;
     font-size: 3rem;
     color: #5d3c27;
     font-weight: bold;
 }
 h2 {
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     font-style: italic;
-    color: #8a6240;
+    color: #5d3c27;
+    line-height: 1.5; /* Increase the line spacing */
 }
 
 #björn {
@@ -75,13 +75,22 @@ h2 {
     margin-bottom: 10px;
     border-bottom: 2px solid #d7a98c;
     padding-bottom: 5px;
+    line-height: 1.25; /* Increase the line spacing */
 }
 .ingredients ul,
 .instructions ol {
     margin-left: 20px;
     margin-top: 10px;
-    font-size: 1rem;
+    font-size: 1.3rem;
     color: #4f3625;
+    line-height: 1.25; /* Increase the line spacing */
+}
+
+p {
+    font-size: 1.5rem;
+    font-style: italic;
+    color: #5d3c27;
+    line-height: 1.5; /* Increase the line spacing */
 }
 
 /* #kanelfyllning-ingredienser{
@@ -105,4 +114,11 @@ h2 {
     height: auto;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.footer {
+    grid-column: 1/4; /* Sträcker sig över hela bredden */
+    display: flex; /* Making it to a flex-container */
+    justify-content: center;
+    color: #4f3625;
 }
