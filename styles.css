@@ -3,60 +3,74 @@ Namn: Daria
 Klass: TE23E
 */
 
-/* General */
 * {
     margin: 0;
     padding: 0;
+    /*Återställer margin och padding till 0 för alla element.*/
     box-sizing: border-box;
+    /*Ställ in box-sizing till border-box för att inkludera padding och border i den angivna bredden och höjden*/
 }
+
 body {
     font-family: 'Georgia', serif;
+    /*Ställer in typsnitt*/
     background-image: url(/img/background.jpg);
+    /*Lägger till bakgrundsbild*/
     display: flex;
     justify-content: center;
     align-items: center;
+    /*Gör body till en flex-container och centrerar innehåll både horisontellt och vertikalt.*/
     min-height: 100vh;
+    /*Ställer in minsta höjd till 100vh*/
 }
 
 .container {
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: auto 1fr 2fr 1ft;
+    /*Definierar ett grid-layout med specifika rader och kolumner*/
+    gap: 10px;
+    /*Lägger till mellanrum mellan elementen.*/
     position: relative;
-    width: 1700px;
-    height: 100%;
+    /*Positionerar containern relativt till andra element.*/
+    width: 1500px;
+    height: 100vh;
+    /*Anger en fast bredd och höjd.*/
 }
 
-/* Background */
-.background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: url('/img/background.jpg') no-repeat center;
-    background-size: cover;
-    z-index: -1;
-    opacity: 0.2;
+.container>div {
+    border: 5px #4f3625;
+    background-color: #c1a898;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    /*Lägger till en kantlinje, bakgrundsfärg, padding och avrundade hörn till alla direkt underordnade div-element.*/
 }
 
 /* Header */
 header {
     display: flex;
     flex-direction: row;
-    justify-content:space-between;
+    justify-content: space-between;
     margin-top: 70px;
-    /* margin-bottom: 20px; */
+    margin-bottom: 20px;
+    /*Gör header till en flex-container och justerar elementen horisontellt.*/
 }
+
 header h1 {
     margin-top: 50px;
     font-size: 3rem;
     color: #5d3c27;
     font-weight: bold;
+    /*Stylar huvudrubriken med storlek, färg och vikt.*/
 }
+
 h2 {
     text-align: center;
     font-size: 1.8rem;
     font-style: italic;
     color: #5d3c27;
-    line-height: 1.5; /* Increase the line spacing */
+    line-height: 1.5;
+    /*Stylar underrubriker med storlek, stil, färg och linjeavstånd.*/
 }
 
 #björn {
@@ -65,60 +79,55 @@ h2 {
     width: 15%;
     height: 15%;
     border-radius: 10px;
+    /*Positionerar och stylar ett specifikt element med ID:t "björn".*/
 }
 
-/* Ingredients */
-.ingredients h3, 
+.ingredients h3,
 .instructions h3 {
     font-size: 1.8rem;
     color: #5d3c27;
     margin-bottom: 10px;
     border-bottom: 2px solid #d7a98c;
     padding-bottom: 5px;
-    line-height: 1.25; /* Increase the line spacing */
+    line-height: 1.25;
+    /*Stylar rubriker för ingredienser och instruktioner med storlek, färg, understrykning och linjeavstånd.*/
 }
+
 .ingredients ul,
 .instructions ol {
     margin-left: 20px;
     margin-top: 10px;
     font-size: 1.3rem;
     color: #4f3625;
-    line-height: 1.25; /* Increase the line spacing */
+    line-height: 1.25;
+    /*Stylar listor för ingredienser och instruktioner med indrag, storlek, färg och linjeavstånd.*/
 }
 
 p {
     font-size: 1.5rem;
     font-style: italic;
     color: #5d3c27;
-    line-height: 1.5; /* Increase the line spacing */
+    line-height: 1.5;
+    /*Stylar vanliga textstycken med storlek, stil, färg och linjeavstånd.*/
 }
 
-/* #kanelfyllning-ingredienser{
-
-} 
-#vetdeg-ingredienser{
-
-} */
-
-
 /* Center Image */
-.center-image {
-    width: 30%;
+#center-image {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.center-image img {
     width: 100%;
-    height: auto;
+    height: 50%;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /*Centrerar och stylar ett bildområde med skugga.*/
 }
 
 .footer {
-    grid-column: 1/4; /* Sträcker sig över hela bredden */
-    display: flex; /* Making it to a flex-container */
+    grid-column: 1/4;
+    /* Gör footern till en flex-container */
+    display: flex;
+    /* och centrerar innehållet */
     justify-content: center;
     color: #4f3625;
 }
