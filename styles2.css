@@ -54,3 +54,13 @@ p {
     font-size: 1rem;
     color: #4f3625;
  }
+
+
+ /* Top Right Image */
+.top-right-image {
+    position: absolute;
+    top: 40px;
+    right: 50px;
+    width: 250px;
+    z-index: 10;
+}
