@@ -44,8 +44,7 @@ body {
 header {
     display: flex;
     flex-direction: row;
-    justify-content:space-between;
-    text-align: center;
+    justify-content: space-between;
     margin-top: 70px;
     margin-bottom: 20px;
     /*Gör header till en flex-container och justerar elementen horisontellt.*/
@@ -57,16 +56,20 @@ header h1 {
     font-size: 3rem;
     color: #5d3c27;
     font-weight: bold;
-    /*Stylar huvudrubriken med storlek, placering, färg och vikt.*/
+    /*Stylar huvudrubriken med storlek, färg och vikt.*/
 }
 
-#stickers {
+#björn {
     grid-row: 2/5;
     grid-column: 1/2;
     width: 15%;
     height: 15%;
     border-radius: 10px;
-    /*Positionerar och stylar ett specifikt element med ID:t "stickers".*/
+    /*Positionerar och stylar ett specifikt element med ID:t "björn".*/
+
+}
+.länkar {
+    justify-items: center;
 }
 
 h2 {
@@ -74,14 +77,8 @@ h2 {
     font-style: italic;
     color: #5d3c27;
     line-height: 1.5; 
-    /*Stylar underrubriker med storlek, placering, stil, färg och linjeavstånd.*/
+    /*Stylar underrubriker med storlek, stil, färg och linjeavstånd.*/
 }
-p {
-    font-size: 1.5rem;
-    color: #432e20;
-    line-height: 1.25; 
-    /*Stylar vanliga textstycken med storlek, stil, färg och linjeavstånd.*/
- }
 
  ul {
     margin-left: 20px;
@@ -89,10 +86,10 @@ p {
     font-size: 1.5rem;
     color: #4f3625;
     line-height: 1.25;
-    /*Stylar listor med indrag, storlek, färg och linjeavstånd.*/
+    /*Stylar listor för ingredienser med indrag, storlek, färg och linjeavstånd.*/
  }
 
- #center-img {
+ #ingredienser {
     display: flex;
     justify-content: center;
     align-items: center;
